@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>{{config('app.name','HNS Orphanage')}}</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery-1.6.js"></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/Vegur_700.font.js"></script>
-<script type="text/javascript" src="js/Vegur_400.font.js"></script>
-<script type="text/javascript" src="js/Vegur_300.font.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/tms-0.3.js"></script>
-<script type="text/javascript" src="js/tms_presets.js"></script>
-<script type="text/javascript" src="js/backgroundPosition.js"></script>
-<script type="text/javascript" src="js/atooltip.jquery.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<style type="text/css">.box1 figure{behavior:url("js/PIE.htc");}</style>
-<![endif]-->
-</head>
+@include('layouts.app')
 <body id="page1">
 <div class="body1">
   <div class="main">
@@ -33,7 +9,7 @@
         <nav>
           <ul id="top_nav">
             <li><a href="/"><img src="storage/top_icon1.gif" alt=""></a></li>
-            <li><a href="#"><img src="storage/top_icon2.gif" alt=""></a></li>
+            <li><a href="/login"><img src="storage/top_icon2.gif" alt=""></a></li>
             <li class="end"><a href="/contact"><img src="storage/top_icon3.gif" alt=""></a></li>
           </ul>
         </nav>
@@ -41,7 +17,6 @@
           <ul id="menu">
             <li id="menu_active"><a href="/">Home</a></li>
             <li><a href="/mission">Our Mission</a></li>
-            <li><a href="/news">News &amp; Press</a></li>
             <li><a href="/help">How to Help</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -88,7 +63,7 @@
                 <div class="pad_bot1">
                   <figure><img src="storage/page1_img1.jpg" alt=""></figure>
                 </div>
-                <a href="#" class="button1">SIGN IN</a> </section>
+                <a href="/login" class="button1">SIGN IN</a> </section>
               <section class="col1 pad_left1">
                 <span>Want to know more about us?</span></h2>
                 <br></br>
@@ -106,16 +81,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="wrapper">
-        <h3>Our Mission</h3>
-        <p class="quot">Changing an orphan's future through the love of God and family.<img src="storage/quot2.png" alt=""> </p>
-      </div>
     </article>
     <!-- / content -->
     <!-- footer -->
     <footer>
-      <div class="wrapper"> <a href="/" id="footer_logo"><span>HNS </span>Orphanage</a>
+      <div class="wrapper"> <a href="/" id="footer_logo"><span>HNS</span>Orphanage</a>
         <ul id="icons">
           <li><a href="#" class="normaltip"><img src="storage/icon1.gif" alt=""></a></li>
           <li><a href="#" class="normaltip"><img src="storage/icon2.gif" alt=""></a></li>
@@ -127,7 +97,6 @@
           <ul id="footer_menu">
             <li class="active"><a href="/">Home</a></li>
             <li><a href="/mission">Our Mission</a></li>
-            <li><a href="/news">News &amp; Press</a></li>
             <li><a href="/help">How to Help</a></li>
             <li class="end"><a href="/contact">Contact</a></li>
           </ul>

@@ -1,15 +1,12 @@
 @include('layouts.app')
-
-<h2>Donations</h2>
-<br></br>
-<body>Make an online donation for our shelter</body>
+<head>
+<h2>Create customers</h2>
 
 {!! Form::open(['action'=>'CustomersController@store','method'=>'CUSTOMER']) !!}
     <div class="form-group">
         {{Form::label('name','Name')}}
         {{Form::text('name','', ['placeholder'=>'Enter your name'])}}
     </div>
-    {!! Form::open(['action'=>'CustomersController@store','method'=>'CUSTOMER']) !!}
     <div class="form-group">
         {{Form::label('cnic','CNIC number')}}
         {{Form::text('cnic','', ['placeholder'=>'Enter your CNIC'])}}

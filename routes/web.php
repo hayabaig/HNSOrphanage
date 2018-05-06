@@ -16,6 +16,8 @@ Route::get('/mission', 'PagesController@mission');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/help', 'PagesController@help');
 Route::get('/donations', 'PagesController@donations');
+Route::get('/login', 'PagesController@login');
+Route::get('/register', 'PagesController@register');
 
 
 Route::resource('customers','CustomersController');

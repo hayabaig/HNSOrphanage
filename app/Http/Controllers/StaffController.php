@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Staff;
 
 class StaffController extends Controller
 {
@@ -34,7 +35,21 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name'=>'required',
+            'email'=>'required',
+            'contactnum'=>'required',
+            'address'=>'required',
+        ]);
+
+        $staff = new Staff;
+        $staff->name=$request->input('name');
+        $staff->email=$request->input('email');
+        $staff->contactnum=$request->input('contactnum');
+        $staff->address=$request->input('address');
+        $staff->save();
+
+        return redirect('/show')->with('Details entered','Succeeded');
     }
 
     /**
@@ -43,9 +58,10 @@ class StaffController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($pass)
     {
-        //
+        $staff = Staff::find($pass);
+        return view('staff.show')->with('staff',$staff);
     }
 
     /**

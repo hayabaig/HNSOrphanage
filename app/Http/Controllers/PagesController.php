@@ -22,5 +22,11 @@ class PagesController extends Controller
     public function donations() {
         return view('pages.donations');
     }
+    public function login() {
+        return view('pages.login');
+    }
+    public function register() {
+        return view('pages.register');
+    }
     
 }

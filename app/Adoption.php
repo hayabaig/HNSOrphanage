@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Orphans extends Model
+class Adoption extends Model
 {
         //Table name
-        protected $table = 'orphans';
+        protected $table = 'adoption';
 
         //Primary key
         public $primaryKey = 'id';
-    
+
         //Timestamps
         public $timestamps = true; 
 }

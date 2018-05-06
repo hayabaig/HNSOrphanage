@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>HNS Orphanage | Contact</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery-1.6.js"></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/Vegur_700.font.js"></script>
-<script type="text/javascript" src="js/Vegur_400.font.js"></script>
-<script type="text/javascript" src="js/Vegur_300.font.js"></script>
-<script type="text/javascript" src="js/atooltip.jquery.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<style type="text/css">.box1 figure{behavior:url("js/PIE.htc");}</style>
-<![endif]-->
-</head>
+@include('layouts.app')
 <body id="page5">
 <div class="body1">
   <div class="main">
@@ -29,7 +9,7 @@
         <nav>
           <ul id="top_nav">
             <li><a href="/"><img src="storage/top_icon1.gif" alt=""></a></li>
-            <li><a href="#"><img src="storage/top_icon2.gif" alt=""></a></li>
+            <li><a href="/login"><img src="storage/top_icon2.gif" alt=""></a></li>
             <li class="end"><a href="contact.html"><img src="storage/top_icon3.gif" alt=""></a></li>
           </ul>
         </nav>
@@ -37,7 +17,6 @@
           <ul id="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/mission">Our Mission</a></li>
-            <li><a href="/news">News &amp; Press</a></li>
             <li><a href="/help">How to Help</a></li>
             <li id="menu_active"><a href="/contact">Contact</a></li>
           </ul>
@@ -82,9 +61,6 @@
               <div class="wrapper"><span>Your E-mail:</span>
                 <input type="text" class="input">
               </div>
-              <div class="wrapper"><span>Your Website:</span>
-                <input type="text" class="input">
-              </div>
               <div class="textarea_box"><span>Your Message:</span>
                 <textarea name="textarea" cols="1" rows="1"></textarea>
               </div>
@@ -108,16 +84,14 @@
           <ul id="footer_menu">
             <li><a href="/">Home</a></li>
             <li><a href="/mission">Our Mission</a></li>
-            <li><a href="/news">News &amp; Press</a></li>
             <li><a href="/help">How to Help</a></li>
             <li class="end active"><a href="/contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="tel"><span>+1 800</span>123 45 67</div>
+        <div class="tel"><span>+92 213</span>123456</div>
       </div>
-      <div id="footer_text">Copyright &copy; <a href="#">Domain Name</a> All Rights Reserved<br>
-        Design by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></div>
-    </footer>
+      <div id="footer_text">Copyright &copy; <a href="#">HNSOrphanage.me</a> All Rights Reserved<br>
+      </footer>
     <!-- / footer -->
   </div>
 </div>

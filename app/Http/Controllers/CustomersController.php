@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Customers;
+use Illuminate\Database\Eloquent\Collection;
 
 class CustomersController extends Controller
 {
@@ -14,8 +15,8 @@ class CustomersController extends Controller
      */
     public function index()
     {
-        return Customers::all();
-        return view('customers.index');
+        $customers= Customers::all();
+        return view('customers.index')->with('customers',$customers);
     }
 
     /**
@@ -25,7 +26,7 @@ class CustomersController extends Controller
      */
     public function create()
     {
-        //
+        return view('customers.create');
     }
 
     /**
@@ -36,7 +37,25 @@ class CustomersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name'=>'required',
+            'cnic'=>'required',
+            'contactnum'=>'required',
+            'address'=>'required',
+            'age'=>'required',
+            'gender'=>'required',
+        ]);
+
+        $customers = new Customers;
+        $customers->name=$request->input('name');
+        $customers->cnic=$request->input('cnic');
+        $customers->contactnum=$request->input('contactnum');
+        $customers->address=$request->input('address');
+        $customers->age=$request->input('age');
+        $customers->gender=$request->input('gender');
+        $customers->save();
+
+        return redirect('/customers')->with('Details entered','Customer details entered');
     }
 
     /**
@@ -47,7 +66,8 @@ class CustomersController extends Controller
      */
     public function show($id)
     {
-        //
+        $customers = Customers::find($id);
+        return view('customers.show')->with('customers',$customers);
     }
 
     /**

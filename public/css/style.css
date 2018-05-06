@@ -21,7 +21,7 @@ body {
 	background:url(../storage/bg.jpg) top center repeat;
 	border:0;
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color:#575652;
+	color:black;
 	line-height:22px
 }
 .ic, .ic a {
@@ -68,7 +68,7 @@ h1 {
 }
 h2 {
 	font-size:35px;
-	color:#575652;
+	color:black;
 	font-weight:400;
 	line-height:1.2em;
 	letter-spacing:-1px;
@@ -102,8 +102,8 @@ h3 {
 	letter-spacing:-1px
 }
 h4 {
-	color:#dad6cc;
-	font-weight:300;
+	color:black;
+	font-weight:400;
 	font-size:35px;
 	line-height:1.2em;
 	padding:0 0 7px 0;
@@ -127,7 +127,7 @@ p {
 	padding-bottom:22px;
 }
 strong {
-	color:#dcd9cf
+	color:black;
 }
 /* ============================= header ====================== */
 
@@ -285,7 +285,7 @@ strong {
 	padding-left:26px
 }
 .pad_left2 {
-	padding-left:36px
+	padding-left:36px;
 }
 .pad_bot1 {
 	padding-bottom:14px
@@ -297,9 +297,8 @@ strong {
 	margin-right:37px
 }
 .box1 {
-	background:#a4a19a;
-	border-top:5px solid #a4a19a;
-	padding:15px 30px 29px
+	border-top:5px;
+	padding:55px 30px 29px
 }
 .box1 strong {
 	color:#a4a19a;
@@ -311,7 +310,6 @@ strong {
 	position:relative;
 }
 .box2 {
-	background:#0e0c0a;
 	padding:25px 30px 32px
 }
 .box2 .line1, .box2 .line2 {
@@ -323,7 +321,7 @@ strong {
 	padding-bottom:28px
 }
 .line1 {
-	background:url(../storage/line_vert1.gif) 289px 0 repeat-y
+	background:url(../storage/line_vert1.gif) 289px 0 repeat-y 
 }
 .line2 {
 	background:url(../storage/line_vert1.gif) 591px 0 repeat-y
@@ -370,7 +368,7 @@ strong {
 .button2 {
 	display:inline-block;
 	font-size:15px;
-	color:#fff;
+	color:black;
 	text-transform:uppercase;
 	text-decoration:none;
 	padding:0 21px;
@@ -406,7 +404,7 @@ strong {
 	padding:35px 0 17px 41px;
 	font-style:italic;
 	color:black;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size:18px;
 	background:url(../storage/quot1.png) 0 0 no-repeat;
 	width:570px;
 }
@@ -425,7 +423,7 @@ strong {
 	line-height:26px
 }
 .list1 li a {
-	color:#dcd8cf;
+	color:black;
 	padding-left:22px;
 	background:url(../storage/marker_1.gif) 0 3px no-repeat
 }
@@ -469,7 +467,7 @@ strong {
 }
 /* ============================= footer ====================== */
 footer {
-	background:#a4a19a;
+	background:#646159;
 	padding:21px 36px 44px
 }
 #footer_logo {
@@ -484,7 +482,8 @@ footer {
 	margin-left:-4px
 }
 #footer_logo span {
-	color:#ffc11e
+	color:cyan;
+	font-weight: 400;
 }
 #icons {
 	float:right;
@@ -522,7 +521,8 @@ footer {
 	font-weight:300
 }
 .tel span {
-	color:#ffc11e
+	color:cyan;
+	font-weight:400;
 }
 footer nav {
 	float:left
@@ -555,6 +555,7 @@ footer nav {
 #footer_text {
 	padding-top:18px;
 	border-top:1px solid #0d0d0d;
+	color:black;
 	text-align:center
 }
 #footer_text a {
@@ -568,10 +569,11 @@ footer nav {
 #ContactForm {
 	width:585px;
 	overflow:hidden;
-	padding-bottom:36px
+	padding-bottom:36px;
+	
 }
 #ContactForm .wrapper {
-	height:26px
+	height:26px;
 }
 #ContactForm span {
 	float:left;
@@ -593,18 +595,19 @@ footer nav {
 }
 #ContactForm .input {
 	width:470px;
-	background:#000;
+	background:lightpink;
 	padding:3px 5px;
-	color:#575652;
+	color:black;
+	font-weight:300;
 	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	height:14px
 }
 #ContactForm textarea {
 	overflow:auto;
 	width:470px;
-	background:#000;
+	background:lightpink;
 	padding:3px 5px;
-	color:#575652;
+	color:black;
 	font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	height:91px
 }
